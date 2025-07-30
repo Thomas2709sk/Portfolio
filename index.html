@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/scss/css/main.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid flex-grow-1">
+        <div class="row h-100">
+            <header class="col-12 p-0 col-sm-4 col-md-12 col-lg-4">
+                <nav class="sidebar">
+                    <h1 class="fs-1">Welcome</h1>
+                    <a class="fs-4" href="">Home</a>
+                    <a class="fs-4" href="">About</a>
+                    <a class="fs-4" href="">Tech Stack</a>
+                    <a class="fs-4" href="">Skills</a>
+                    <a class="fs-4" href="">My project</a>
+                </nav>
+            </header>
+            <main class="col">
+                <section id="home" class="container">
+                    <div>
+                        <h2>I'm Thomas</h2>
+                        <span id="typewriter"></span>
+                        <p class="me-5 fs-4">
+                            Hi, I'm a passionate Full Stack Developer with experience building modern web applications
+                            from front-end to back-end. I enjoy creating efficient, scalable solutions and am always
+                            eager to learn new technologies. Welcome to my portfolio!
+                        </p>
+                        <div class="social-icons mt-4">
+                            <a href="https://github.com/Thomas2709sk" target="_blank" aria-label="GitHub">
+                                <i class="fs-1 fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/thomsao/" target="_blank" aria-label="Instagram">
+                                <i class="fs-1 fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="stack" class="container me-5">
+                    <h2>Tech Stack</h2>
+                    <p class="fs-4">Here are some of the main technologies and tools I use to build modern, scalable web
+                        applications.</p>
+                    <div class="d-flex fs-1">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-php"></i>
+                        <i class="fa-brands fa-symfony"></i>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-brands fa-docker"></i>
+                    </div>
+                </section>
+                <section class="container me-5">
+                    <h2 id="skills" class="container">Skills</h2>
+                    <h3>Front-end</h3>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated" style="width: 90%;">
+                            90%
+                        </div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated" style="width: 80%;">
+                            80%
+                        </div>
+                    </div>
+                    <h3>Back-end</h3>
+                    <p>PHP</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated" style="width: 75%;">
+                            75%
+                        </div>
+                    </div>
+                </section>
+                <section id="project" class="container">
+                    <h2>My Project</h2>
+                    <p class="fs-4 me-5">Here are some of the projects I’ve worked on recently</p>
+                    <div class="d-flex">
+                        <a href="https://github.com/Thomas2709sk/ecoride" target="_blank" aria-label="Ecoride">
+                            <img src="assets/images/Ecoride.png" alt="logo ecoride" width="150" height="150">
+                        </a>
+                        <a href="https://github.com/Thomas2709sk/japaneeds" target="_blank" aria-label="Japaneeds you">
+                            <img src="assets/images/japn.png" alt="logo japaneeds you" width="150" height="150">
+                        </a>
+                        <a href="https://github.com/Thomas2709sk/expedition_ramen" target="_blank" aria-label="expedition ramen">
+                            <img src="assets/images/Expedition.png" alt="logo expedition ramen" width="150" height="150">
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="pt-4 d-flex justify-content-end align-items-center container-fluid">
+        <p class="mb-0">&copy; 2025 Mon Portfolio.</p>
+        <a class="fw-bold text-primary" href="">Mentions légales</a>
+    </footer>
+</body>
+<style>
+    #typewriter {
+        font-family: inherit;
+        font-size: 2rem;
+        border-right: 2px solid #4F6273;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: blink-cursor 0.8s steps(1) infinite;
+    }
+
+    @keyframes blink-cursor {
+
+        0%,
+        100% {
+            border-color: #4F6273;
+        }
+
+        50% {
+            border-color: transparent;
+        }
+    }
+</style>
+<script>
+    const txt = "Full Stack Software Developer";
+    const speed = 70;      // ms per letter (typing)
+    const eraseSpeed = 40; // ms per letter (erasing)
+    const delay = 1200;    // delay before erasing
+
+    let i = 0;
+    let isErasing = false;
+    const target = document.getElementById("typewriter");
+
+    function typeEraseLoop() {
+        if (!isErasing && i <= txt.length) {
+            target.textContent = txt.substring(0, i);
+            i++;
+            if (i > txt.length) {
+                isErasing = true;
+                setTimeout(typeEraseLoop, delay);
+            } else {
+                setTimeout(typeEraseLoop, speed);
+            }
+        } else if (isErasing && i >= 0) {
+            target.textContent = txt.substring(0, i);
+            i--;
+            if (i < 0) {
+                isErasing = false;
+                setTimeout(typeEraseLoop, 400);
+            } else {
+                setTimeout(typeEraseLoop, eraseSpeed);
+            }
+        }
+    }
+    typeEraseLoop();
+</script>
+
+</html>

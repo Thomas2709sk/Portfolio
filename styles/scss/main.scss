@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+
+
+@use '../../node_modules/bootstrap/scss/bootstrap' with (
+    $primary: $primary,
+    );
+    
+@use './components/header';
+@use './base/reset';
+@use './base/typography';
