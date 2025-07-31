@@ -21,149 +21,171 @@
             <header class="col-12 p-0 col-sm-4 col-md-12 col-lg-4">
                 <nav class="sidebar">
                     <h1 class="fs-1">Welcome</h1>
-                    <a class="fs-4" href="">Home</a>
+                    <a class="fs-4" href="#home">Home</a>
                     <a class="fs-4" href="">About</a>
-                    <a class="fs-4" href="">Tech Stack</a>
-                    <a class="fs-4" href="">Skills</a>
-                    <a class="fs-4" href="">My project</a>
+                    <a class="fs-4" href="#stack">Tech Stack</a>
+                    <a class="fs-4" href="#skills">Skills</a>
+                    <a class="fs-4" href="#project">My project</a>
                 </nav>
             </header>
-            <main class="col">
-                <section id="home" class="container">
-                    <div>
-                        <h2>I'm Thomas</h2>
-                        <span id="typewriter"></span>
-                        <p class="me-5 fs-4">
-                            Hi, I'm a passionate Full Stack Developer with experience building modern web applications
-                            from front-end to back-end. I enjoy creating efficient, scalable solutions and am always
-                            eager to learn new technologies. Welcome to my portfolio!
-                        </p>
-                        <div class="social-icons mt-4">
-                            <a href="https://github.com/Thomas2709sk" target="_blank" aria-label="GitHub">
-                                <i class="fs-1 fab fa-github"></i>
-                            </a>
-                            <a href="https://www.instagram.com/thomsao/" target="_blank" aria-label="Instagram">
-                                <i class="fs-1 fab fa-instagram"></i>
-                            </a>
+            <main class="col col-lg-8 col-sm-12 bg-primary text-info pb-5 bg-gradient">
+                <section id="home" class="container mt-5 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-7">
+                            <h2>I'm Thomas</h2>
+                            <span id="typewriter" class="fs-4"></span><br>
+                            <small>$ Hello world</small>
+                            <p class="text-info fs-5 mt-2">
+                                Hi, I'm a passionate Full Stack Developer with experience building modern web
+                                applications
+                                from front-end to back-end. I enjoy creating efficient, scalable solutions and am always
+                                eager to learn new technologies. Welcome to my portfolio!
+                            </p>
+                            <div class="social-icons mt-1">
+                                <a href="https://github.com/Thomas2709sk" target="_blank" aria-label="GitHub">
+                                    <i class="fs-2 fab fa-github me-2 icon"></i>
+                                </a>
+                                <a href="https://www.instagram.com/thomsao/" target="_blank" aria-label="Instagram">
+                                    <i class="fs-2 fab fa-instagram icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 text-center text-md-end mt-4 mt-md-0">
+                            <img src="assets/images/dev.png" width="400" alt="illustration de developpeur"
+                                class="img-fluid">
                         </div>
                     </div>
                 </section>
-                <section id="stack" class="container me-5">
+                <section id="stack" class="container mb-5">
                     <h2>Tech Stack</h2>
-                    <p class="fs-4">Here are some of the main technologies and tools I use to build modern, scalable web
+                    <p class="fs-5">Here are some of the main technologies and tools I use to build modern, scalable web
                         applications.</p>
-                    <div class="d-flex fs-1">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-php"></i>
-                        <i class="fa-brands fa-symfony"></i>
-                        <i class="fa-solid fa-database"></i>
-                        <i class="fa-brands fa-docker"></i>
+                    <div class="d-flex justify-content-center gap-4 fs-1 flex-wrap">
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-html5"></i>
+                            <span class="fs-6">HTML5</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span class="fs-6">CSS3</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span class="fs-6">Bootstrap</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-sass"></i>
+                            <span class="fs-6">Sass</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-js"></i>
+                            <span class="fs-6">JavaScript</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-php"></i>
+                            <span class="fs-6">PHP</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-symfony"></i>
+                            <span class="fs-6">Symfony</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-solid fa-database"></i>
+                            <span class="fs-6">Database</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center icon">
+                            <i class="fa-brands fa-docker"></i>
+                            <span class="fs-6">Docker</span>
+                        </div>
                     </div>
                 </section>
-                <section class="container me-5">
-                    <h2 id="skills" class="container">Skills</h2>
+                <section class="container">
+                    <h2 id="skills">Skills</h2>
                     <h3>Front-end</h3>
-                    <p>HTML</p>
+                    <p class="mb-1 mt-2">HTML</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-animated" style="width: 90%;">
+                        <div class="progress-bar bg-warning border" style="width: 90%;">
                             90%
                         </div>
                     </div>
-                    <p>Javascript</p>
+                    <p class="mb-1 mt-2">CSS</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-animated" style="width: 80%;">
+                        <div class="progress-bar bg-warning border" style="width: 90%;">
+                            90%
+                        </div>
+                    </div>
+                    <p class="mb-1 mt-2">Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning border" style="width: 80%;">
                             80%
                         </div>
                     </div>
-                    <h3>Back-end</h3>
-                    <p>PHP</p>
+                    <h3 class="mt-2">Back-end</h3>
+                    <p class="mb-1 mt-2">PHP</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-animated" style="width: 75%;">
+                        <div class="progress-bar bg-warning border" style="width: 75%;">
                             75%
                         </div>
                     </div>
                 </section>
-                <section id="project" class="container">
-                    <h2>My Project</h2>
-                    <p class="fs-4 me-5">Here are some of the projects I’ve worked on recently</p>
-                    <div class="d-flex">
-                        <a href="https://github.com/Thomas2709sk/ecoride" target="_blank" aria-label="Ecoride">
-                            <img src="assets/images/Ecoride.png" alt="logo ecoride" width="150" height="150">
-                        </a>
-                        <a href="https://github.com/Thomas2709sk/japaneeds" target="_blank" aria-label="Japaneeds you">
-                            <img src="assets/images/japn.png" alt="logo japaneeds you" width="150" height="150">
-                        </a>
-                        <a href="https://github.com/Thomas2709sk/expedition_ramen" target="_blank" aria-label="expedition ramen">
-                            <img src="assets/images/Expedition.png" alt="logo expedition ramen" width="150" height="150">
-                        </a>
+                <section id="project" class="container mt-5">
+                    <h2>My Projects</h2>
+                    <p class="fs-5">Here are some of the projects I’ve worked on recently</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <!-- Projet 1 -->
+                        <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                            <img src="assets/images/Ecoride.png" alt="logo ecoride" class="img-fluid portfolio-img" />
+                            <div
+                                class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center px-2">
+                                <h4>Ecoride</h4>
+                                <p class="small">Eco-friendly carpooling platform.</p>
+                                <a href="https://github.com/Thomas2709sk/ecoride" target="_blank"
+                                    class="btn btn-sm btn-light mt-2">See on GitHub</a>
+                            </div>
+                        </div>
+                        <!-- Projet 2 -->
+                        <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                            <img src="assets/images/japn.png" alt="logo japaneeds you"
+                                class="img-fluid portfolio-img" />
+                            <div
+                                class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center px-2">
+                                <h4>Japaneeds You</h4>
+                                <p class="small">App to discover Japanese culture.</p>
+                                <a href="https://github.com/Thomas2709sk/japaneeds" target="_blank"
+                                    class="btn btn-sm btn-light mt-2">See on GitHub</a>
+                            </div>
+                        </div>
+                        <!-- Projet 3 -->
+                        <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                            <img src="assets/images/Expedition.png" alt="logo expedition ramen"
+                                class="img-fluid portfolio-img" />
+                            <div
+                                class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center px-2">
+                                <h4>Expedition Ramen</h4>
+                                <p class="small">Ramen restaurant website.</p>
+                                <a href="https://github.com/Thomas2709sk/expedition_ramen" target="_blank"
+                                    class="btn btn-sm btn-light mt-2">See on GitHub</a>
+                            </div>
+                        </div>
                     </div>
+                </section>
+                <section class="mt-5">
+                    <h2 class="mb-0">Contact</h2>
+                    <small>$ contact --info</small>
+                    <h3 class="fs-5 mt-2 mb-0">Email</h3>
+                    <small>$ contact --email</small><br>
+                    <a class="btn btn-sm btn-outline-info mt-2 mb-4" href="mailto:noaillesthomas@gmail.com">Contact me by email</a><br>
+                    <small>$ cat resume.pdf</small><br>
+                    <a class="btn btn-sm btn-outline-info mt-2 mb-2" href="cv.pdf" download>Dowload resume</a>
                 </section>
             </main>
         </div>
     </div>
-    <footer class="pt-4 d-flex justify-content-end align-items-center container-fluid">
+    <footer class="pt-4 bg-primary text-info d-flex justify-content-end align-items-center container-fluid">
         <p class="mb-0">&copy; 2025 Mon Portfolio.</p>
-        <a class="fw-bold text-primary" href="">Mentions légales</a>
+        <a class="fw-bold" href="">Mentions légales</a>
     </footer>
 </body>
-<style>
-    #typewriter {
-        font-family: inherit;
-        font-size: 2rem;
-        border-right: 2px solid #4F6273;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: blink-cursor 0.8s steps(1) infinite;
-    }
-
-    @keyframes blink-cursor {
-
-        0%,
-        100% {
-            border-color: #4F6273;
-        }
-
-        50% {
-            border-color: transparent;
-        }
-    }
-</style>
-<script>
-    const txt = "Full Stack Software Developer";
-    const speed = 70;      // ms per letter (typing)
-    const eraseSpeed = 40; // ms per letter (erasing)
-    const delay = 1200;    // delay before erasing
-
-    let i = 0;
-    let isErasing = false;
-    const target = document.getElementById("typewriter");
-
-    function typeEraseLoop() {
-        if (!isErasing && i <= txt.length) {
-            target.textContent = txt.substring(0, i);
-            i++;
-            if (i > txt.length) {
-                isErasing = true;
-                setTimeout(typeEraseLoop, delay);
-            } else {
-                setTimeout(typeEraseLoop, speed);
-            }
-        } else if (isErasing && i >= 0) {
-            target.textContent = txt.substring(0, i);
-            i--;
-            if (i < 0) {
-                isErasing = false;
-                setTimeout(typeEraseLoop, 400);
-            } else {
-                setTimeout(typeEraseLoop, eraseSpeed);
-            }
-        }
-    }
-    typeEraseLoop();
-</script>
+<script src="scripts/typewriter.js"></script>
 
 </html>

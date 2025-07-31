@@ -1,0 +1,21 @@
+
+    #typewriter {
+        font-family: inherit;
+        font-size: 2rem;
+        border-right: 2px solid #DFE9F2;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: blink-cursor 0.8s steps(1) infinite;
+    }
+
+    @keyframes blink-cursor {
+
+        0%,
+        100% {
+            border-color: #DFE9F2;
+        }
+
+        50% {
+            border-color: transparent;
+        }
+    }

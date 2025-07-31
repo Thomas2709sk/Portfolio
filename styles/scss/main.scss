@@ -4,8 +4,15 @@
 
 @use '../../node_modules/bootstrap/scss/bootstrap' with (
     $primary: $primary,
+    $secondary: $secondary,
+    $info: $info,
+    $warning: $warning,
     );
     
 @use './components/header';
+@use './components/typewriter';
+@use './components/icon';
+@use './components/project';
+
 @use './base/reset';
 @use './base/typography';
